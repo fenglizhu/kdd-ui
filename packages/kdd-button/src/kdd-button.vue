@@ -121,23 +121,23 @@ export default {
     }
     /* 按钮类型 */
     .kd-button-primary{
-        border-color: #409EFF;
-        background-color: #409EFF;
+        border-color: #709bb7;
+        background-color: #709bb7;
         color: #FFF;
     }
     .kd-button-info{
-        border-color: #07c160;
-        background-color: #07c160;
+        border-color: #8eb770;
+        background-color: #8eb770;
         color: #FFF;
     }
     .kd-button-warning{
-        border-color: #feca2d;
-        background-color: #feca2d;
+        border-color: #e3b93c;
+        background-color: #e3b93c;
         color: #FFF;
     }
     .kd-button-danger{
-        border-color: #ee0a24;
-        background-color: #ee0a24;
+        border-color: #d37171;
+        background-color: #d37171;
         color: #FFF;
     }
     /* 朴素按钮 */
@@ -145,16 +145,16 @@ export default {
         background-color: #fff;
     }
     .kd-button-primary.kd-button-plain{
-        color: #409EFF;
+        color: #709bb7;
     }
     .kd-button-info.kd-button-plain{
-        color: #07c160;
+        color: #8eb770;
     }
     .kd-button-warning.kd-button-plain{
-        color: #feca2d;
+        color: #e3b93c;
     }
     .kd-button-danger.kd-button-plain{
-        color: #ee0a24;
+        color: #d37171;
     }
     /* 细边框 */
     .kd-button-hairline{

@@ -43,20 +43,20 @@ export default {
         text-decoration: none;
     }
     .kdd-link:hover,.kdd-link:active,.kdd-link:focus{
-        color: #409EFF;
+        color: #709bb7;
         
     }
     .kdd-link-primary{
-        color: #409EFF;
+        color: #709bb7;
     }
     .kdd-link-info,.kdd-link-info:hover,.kdd-link-info:active,.kdd-link-info:focus{
-        color: #07c160;
+        color: #8eb770;
     }
     .kdd-link-warning, .kdd-link-warning:hover,.kdd-link-warning:active,.kdd-link-warning:focus{
-        color: #feca2d;
+        color: #e3b93c;
     }
     .kdd-link-danger, .kdd-link-danger:hover,.kdd-link-danger:active,.kdd-link-danger:focus{
-        color: #ee0a24;
+        color: #d37171;
     }
     .kdd-link-underline:hover,.kdd-link-underline:active,.kdd-link-underline:focus{
         text-decoration: underline;
