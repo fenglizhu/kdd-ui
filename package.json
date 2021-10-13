@@ -1,12 +1,17 @@
 {
   "name": "kdd-ui",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "private": false,
   "author": "zhufengli",
   "description": "A Component Library for Vue.js.",
   "style": "lib/kdd-ui.css",
   "main": "./src/index.js",
-  "keywords": ["ui","kdd-ui","component","vue"],
+  "keywords": [
+    "ui",
+    "kdd-ui",
+    "component",
+    "vue"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
