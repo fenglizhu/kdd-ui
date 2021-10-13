@@ -9,12 +9,16 @@
         'kdd-input-group': $slots.prepend || $slots.append,
         'kdd-input-group-prepend': $slots.prepend,
         'kdd-input-group-append': $slots.append,
+        'kdd-input-prefix': $slots.prefix,
     }]">
         <template v-if="type!= 'textarea'">
             <div class="kdd-input-prepend-inner" v-if="$slots.prepend">
                 <slot name="prepend"></slot>
             </div>
             <div class="kdd-input-content">
+                <span v-if="$slots.prefix" class="kdd-input-prefix-inner">
+                    <slot name="prefix"></slot>
+                </span>
                 <input class="kdd-input-inner" ref="input"
                 v-bind="$attrs"
                 :type="isPassword ? (passswordVisible ? 'text': 'password') : type"
@@ -213,10 +217,16 @@ export default {
         border: 1px solid #709bb7;
     }
     .kdd-input-icon-inner{
+        display: flex;
+        align-items: center;
         position: absolute;
         right: 10px;
         top: 1px;
+        background: #FFF;
         line-height: inherit;
+    }
+    .kdd-input-icon-inner .iconfont{
+        font-size: inherit;
     }
     .kdd-input .kdd-input-icon{
         margin-left: 5px;
@@ -224,8 +234,16 @@ export default {
     }
     .kdd-input .kdd-input-length-inner{
         padding: 1px 5px;
-        background: #fff;
         color: #999;
+    }
+    /* 前面有占位图标 */
+    .kdd-input-prefix .kdd-input-inner{
+        padding-left: 30px;
+    }
+    .kdd-input-prefix-inner{
+        position: absolute;
+        left: 10px;
+        top: 1px;
     }
     /* 禁用状态 */
     .kdd-input-disabled .kdd-input-inner,.kdd-input-readonly .kdd-input-inner ,.kdd-input-readonly .kdd-input-inner:focus{

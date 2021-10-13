@@ -3,10 +3,11 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> maxlength="30" showWordLimit -->
     <div style="display:flex">
-        <kdd-input type="textarea" v-model="valueName" @input="changeValue" @focus="focus" placeholder="请输入" ariaLabel="用户名" rows="5">
+        <kdd-input v-model="valueName" @input="changeValue" @focus="focus" maxlength="30"  placeholder="请输入" ariaLabel="用户名" clearable showWordLimit>
             <!-- <div slot="append">.com</div>
             <div slot="prepend">https://</div> -->
-            <div slot="suffix">456</div>
+            <div slot="prefix" class=" iconfont icon-suo"></div>
+            <div slot="suffix" class=" iconfont icon-suo"></div>
         </kdd-input>
         <kdd-button type="danger"  size="small">基础按钮</kdd-button> 
     </div>
