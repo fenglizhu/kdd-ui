@@ -31,9 +31,9 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
+      - run: git config --global user.email "2469069775@qq.com"
+      - run: git config --global user.name "zhufengli"
       - run: npm version patch
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
   publish-npm:
     needs: patch
