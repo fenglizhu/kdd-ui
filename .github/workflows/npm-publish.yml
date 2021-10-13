@@ -32,7 +32,7 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm version patch
-      env:
+        env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
   publish-npm:
