@@ -1,6 +1,6 @@
 {
   "name": "kdd-ui",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "private": false,
   "author": "zhufengli",
   "description": "A Component Library for Vue.js.",
