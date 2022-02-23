@@ -1,10 +1,12 @@
 import KddButton from '../packages/kdd-button/index.js';
 import KddLink from '../packages/kdd-link/index.js';
 import KddInput from '../packages/kdd-input/index.js';
+import kddVideoUpload from '../packages/kdd-video-upload/index.js';
 const components = [
     KddButton,
     KddLink,
-    KddInput
+    KddInput,
+    kddVideoUpload
 ]
 
 const install = function (Vue) {
@@ -24,5 +26,6 @@ export default {
     install,
     KddButton,
     KddLink,
-    KddInput
+    KddInput,
+    kddVideoUpload
 }

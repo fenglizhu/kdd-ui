@@ -13,16 +13,19 @@
     </div>
     
     <kdd-link href="http://localhost:8082/note/2784347" type="primary" :underline="false" @click="alertTips()" target="_blank">基础链接</kdd-link>
+    <kdd-video-upload></kdd-video-upload>
     
   </div>
 </template>
 
 <script>
+// import KddVideoUpload from '../packages/kdd-video-upload/src/kdd-video-upload.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
+    // KddVideoUpload
     // HelloWorld,
   },
   data() {
