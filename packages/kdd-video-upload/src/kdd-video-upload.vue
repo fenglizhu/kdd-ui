@@ -11,37 +11,57 @@
 export default {
     name:"KddVideoUpload",
     props:{
+        // 分类id
         CATE_ID: {
             type: String,
         },
+        // 文件限制大小
         MAX_FILE_SIZE: {
             type: Number,
             default: 1024
         },
+        // 文件名限制大小
+        FILE_NAME_SIZE:{
+            type: Number,
+            default: 50
+        },
+        // 模板id
         TEMPLATE_GROUP_ID: {
             type: String,
         },
+        // 用户id
         USER_ID: {
             type: String,
         },
+        // 区域
         REGION:{
             type: String,
         },
+        // 回调接口地址
         callbackURL:{
             type: String,
         },
-        multiple:{      // 是否多选，暂不支持
+        // 是否支持多选，暂不支持
+        multiple:{
             type: Boolean,
             default: false
         },
+        // ststoken，上传视频的凭证
         STS_TOKEN:{
-            type: Object
+            type: Object,
+            default: () => {
+                accessKeyId: ''
+                accessKeySecret: ''
+                secretToken: ''
+            }
         }
     },
     data() {
         return {
-            videoFile: null,            // 视频文件
-            videoUploader: null,        // 视频上传对象
+            // 视频文件对象
+            videoFile: null,
+            // 视频上传对象
+            videoUploader: null,
         }
     },
     methods: {
@@ -89,12 +109,12 @@ export default {
                 return
             }
             // 文件名不得超过50个字符
-            if (file.name.length > 50) {
+            if (file.name.length > FILE_NAME_SIZE) {
                 this.$emit('file-error', '文件名过长，请修改后上传');
                 return
             }
             this.videoFile = file;
-
+            
             this.$emit('success-change-file',file);
 
         },
