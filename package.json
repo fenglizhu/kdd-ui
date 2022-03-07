@@ -18,6 +18,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name kdd-ui --dest lib src/index.js"
   },
+  "repository": "https://github.com/fenglizhu/kdd-ui",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
