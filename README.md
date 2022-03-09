@@ -1,24 +1,40 @@
-# kd-ui
+# kdd-ui
 
-## Project setup
+## Install
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install kdd-ui
 ```
 
-### Compiles and minifies for production
+## Vue使用
+
 ```
-npm run build
+import KddUI from 'kdd-ui';
+Vue.use(KddUI)
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 组件使用
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/). 
+### 九宫格图片
+```
+<kdd-picture 
+    :pictures="pictures" 
+    :radius="true"
+    @click="clickHandler">
+</kdd-picture>
+
+// 图片集合
+pictures: [
+    'https://www.zhufengli.com/wp-content/uploads/2021/12/cover.jpg',
+    'https://www.zhufengli.com/wp-content/uploads/2021/12/cover.jpg',
+    'https://www.zhufengli.com/wp-content/uploads/2021/12/cover.jpg'
+]
+
+/**
+* url: 当前点击图片地址
+* index: 下标
+*/
+clickHandler(url, index) {
+
+}
+
+```

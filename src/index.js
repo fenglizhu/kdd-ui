@@ -2,11 +2,13 @@ import KddButton from '../packages/kdd-button/index.js';
 import KddLink from '../packages/kdd-link/index.js';
 import KddInput from '../packages/kdd-input/index.js';
 import kddVideoUpload from '../packages/kdd-video-upload/index.js';
+import kddPicture from '../packages/kdd-picture/index.js';
 const components = [
     KddButton,
     KddLink,
     KddInput,
-    kddVideoUpload
+    kddVideoUpload,
+    kddPicture
 ]
 
 const install = function (Vue) {

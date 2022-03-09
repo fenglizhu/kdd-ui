@@ -14,6 +14,13 @@
     
     <kdd-link href="http://localhost:8082/note/2784347" type="primary" :underline="false" @click="alertTips()" target="_blank">基础链接</kdd-link>
     <kdd-video-upload></kdd-video-upload>
+    <div>
+      <kdd-picture 
+        :pictures="pictures" 
+        :radius="true"
+        @click="clickHandler">
+      </kdd-picture>
+    </div>
     
   </div>
 </template>
@@ -30,8 +37,28 @@ export default {
   },
   data() {
       return {
-          valueName: ''
+          valueName: '',
+          pictures: [
+            'https://img0.baidu.com/it/u=502218550,162991900&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+            'https://img2.baidu.com/it/u=2375295774,2938619881&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+          ]
       }
+  },
+  mounted() {
+    // setTimeout(() => {
+    //     this.pictures.push(5,)
+    // }, 5000);
+    // setTimeout(() => {
+    //     this.pictures.push(6)
+    // }, 10000);
   },
   methods: {
       changeValue(value) {
@@ -40,6 +67,9 @@ export default {
       },
       focus(event) {
         //   console.log(event);
+      },
+      clickHandler(item, index) {
+        console.log(item, index);
       }
   }
 }
@@ -53,6 +83,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 600px;
 }
 body{
     -webkit-tap-highlight-color: transparent;
