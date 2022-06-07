@@ -20,16 +20,6 @@
     "test": "jest --config test/unit/jest.config.js",
     "test:coverage": "jest --config test/unit/jest.config.js --coverage"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "vue"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    }
-  },
   "repository": "https://github.com/fenglizhu/kdd-ui",
   "bugs": {
     "url": "https://github.com/fenglizhu/kdd-ui/issues"
