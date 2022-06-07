@@ -27,6 +27,7 @@
   "dependencies": {
     "@vue/compiler-dom": "^3.2.36",
     "core-js": "^3.6.5",
+    "jsdom": "^19.0.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.14"
   },
