@@ -25,14 +25,7 @@ export default {
         underline: {
             type: Boolean,
             default: true
-        },
-        name:{
-            type: String,
-            default: ''
         }
-    },
-    mounted() {
-        console.log(this.$attrs);
     }
 }
 </script>

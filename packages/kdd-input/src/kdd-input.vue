@@ -62,7 +62,6 @@
         @change="changeHandle"
         @compositionstart="compositionstartHandle"
         @compositionend="compositionendHandle">
-
         </textarea>
         
     </div>
@@ -102,10 +101,10 @@ export default {
             type: Boolean,
             default: false
         },
-        // 尺寸: large、normal、small、mini，默认 nomal
+        // 尺寸: large、normal、small、mini，默认 normal
         size:{
             type: String,
-            default: 'nomal'
+            default: 'normal'
         },
         autocomplete:{
             type: String,
