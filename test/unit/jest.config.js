@@ -11,7 +11,7 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1', // 类似 webpack.resolve.alias
   },
-  transform: { // 类似 webpack.module.rules
+  transform: { // 类似 webpack.module.rules 文件处理规则
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
     '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
   },
